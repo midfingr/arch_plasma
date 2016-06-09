@@ -2,5 +2,8 @@
 #This installs the full plasma desktop with extra packages
 
 sudo pacman -S plasma dolphin konsole leafpad ntfs-3g dosfstools xdg-user-dirs pulseaudio-alsa
+sudo pacman -Rns breeze-gtk --noconfirm
+
+yaourt -S breeze-gtk-git
 
 sudo systemctl enable sddm NetworkManager
